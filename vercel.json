@@ -1,13 +1,9 @@
 {
-  "version": 2,
-  "buildCommand": "npm run predeploy",
-  "installCommand": "npm install --legacy-peer-deps",
-  "outputDirectory": "build",
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/index.html",
-      "headers": { "Cache-Control": "no-cache" }
-    }
-  ]
+    "version": 2,
+    "routes":[
+        {
+            "src":"/[^.]+",
+            "dest":"/"
+        }
+    ]
 }
