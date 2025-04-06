@@ -22,7 +22,7 @@ function Contact() {
     const contactMethods = [
         {
             icon: (
-                <MdOutlineMarkEmailRead className='text-2xl text-[#00FF66]'/>
+                <MdOutlineMarkEmailRead className='text-2xl text-[#58a6ff]'/>
             ),
             title: 'Email',
             description: 'Connect with me through email',
@@ -31,7 +31,7 @@ function Contact() {
         },
         {
             icon: (
-                <IoLogoGithub className="text-2xl text-[#00FF66]" />
+                <IoLogoGithub className="text-2xl text-[#58a6ff]" />
             ),
             title: 'GitHub',
             description: 'Let\'s contribute',
@@ -39,7 +39,7 @@ function Contact() {
             link: 'https://github.com/itzrihan',
         },
         {
-            icon: <CiLinkedin className="text-2xl text-[#00FF66]" />,
+            icon: <CiLinkedin className="text-2xl text-[#58a6ff]" />,
             title: 'LinkedIn',
             description: 'Let me know if you need me',
             contact: 'Let\'s connect',
@@ -47,7 +47,7 @@ function Contact() {
         },
         {
             icon: (
-                <FaUpwork className="text-2xl text-[#00FF66]" />
+                <FaUpwork className="text-2xl text-[#58a6ff]" />
             ),
             title: 'Upwork',
             description: 'Visit my Upwork profile',
@@ -57,15 +57,15 @@ function Contact() {
     ];
 
     return (
-        <section id="contact" className="mt-[-5px] relative bg-[#003311] py-10">
-            <div className='absolute inset-0 blur-[118px] max-w-lg h-[800px] mx-auto sm:max-w-3xl sm:h-[400px] max-sm:hidden' style={{ background: "linear-gradient(106.89deg, rgba(0, 255, 102, 0.11) 15.73%, rgba(0, 170, 68, 0.41) 15.74%, rgba(0, 255, 102, 0.26) 56.49%, rgba(0, 170, 68, 0.4) 115.91%)" }}></div>
+        <section id="contact" className="mt-[-5px] relative bg-[#0d1117] py-10">
+            <div className='absolute inset-0 blur-[118px] max-w-lg h-[800px] mx-auto sm:max-w-3xl sm:h-[400px] max-sm:hidden' style={{ background: "linear-gradient(106.89deg, rgba(88, 166, 255, 0.11) 15.73%, rgba(88, 166, 255, 0.41) 15.74%, rgba(88, 166, 255, 0.26) 56.49%, rgba(88, 166, 255, 0.4) 115.91%)" }}></div>
             <div className="max-w-screen-xl mx-auto px-4 text-center container relative z-10">
                 <div>
-                    <h1 className="text-[#00FF66] text-5xl font-bold max-sm:text-3xl">Contact us</h1>
-                    <h1 className="mt-5 text-2xl font-semibold text-white md:text-3xl">
+                    <h1 className="text-[#58a6ff] text-5xl font-bold max-sm:text-3xl">Contact us</h1>
+                    <h1 className="mt-5 text-2xl font-semibold text-[#c9d1d9] md:text-3xl">
                     Start a chat with me anytime 
                     </h1>
-                    <p className="mt-3 text-white">
+                    <p className="mt-3 text-[#8b949e]">
                         I&apos;d love to hear from you. Please fill out this form or shoot an email.
                     </p>
                 </div>
@@ -74,75 +74,86 @@ function Contact() {
                     <div className="grid grid-cols-1 gap-12 md:grid-cols-2 max-sm:gap-y-4">
                         {contactMethods.map((method, index) => (
                             <div key={index}
-                                className="rounded-2xl flex flex-col justify-center items-center p-2" style={{
-                                    backgroundColor: "rgba(0, 51, 17, 0.5)",
+                                className="rounded-2xl flex flex-col justify-center items-center p-2 hover:bg-[#161b22] transition-colors" style={{
+                                    backgroundColor: "#161b22",
                                     backdropFilter: "blur(16px) saturate(180%)",
                                     WebkitBackdropFilter: "blur(16px) saturate(180%)",
                                     borderRadius: "12px",
-                                    border: "1px solid rgba(0, 255, 102, 0.25)",
-                                    boxShadow: "rgba(0, 255, 102, 0.15) 0px 4px 10px",
+                                    border: "1px solid #30363d",
+                                    boxShadow: "0 4px 10px rgba(88, 166, 255, 0.15)",
                                 }}>
-                                <span className="inline-block p-3 text-[#00FF66] rounded-full bg-[#002211]">
+                                <span className="inline-block p-3 text-[#58a6ff] rounded-full bg-[#21262d]">
                                     {method.icon}
                                 </span>
-                                <h2 className="mt-4 text-base font-medium text-white">{method.title}</h2>
-                                <p className="mt-2 text-sm text-gray-300">{method.description}</p>
-                                <a href={method.link} target='_blank' rel="noopener noreferrer" className="mt-2 text-sm text-[#00FF66] hover:text-[#00AA44]">{method.contact}</a>
+                                <h2 className="mt-4 text-base font-medium text-[#c9d1d9]">{method.title}</h2>
+                                <p className="mt-2 text-sm text-[#8b949e]">{method.description}</p>
+                                <a href={method.link} target='_blank' rel="noopener noreferrer" className="mt-2 text-sm text-[#58a6ff] hover:text-[#79c0ff] transition-colors">{method.contact}</a>
                             </div>
                         ))}
                     </div>
-                    <div className="p-4 py-6 rounded-lg bg-[#002211] md:p-8 relative z-10">
+                    <div className="p-4 py-6 rounded-lg bg-[#161b22] border border-[#30363d] md:p-8 relative z-10">
                         <form ref={form} onSubmit={handleSubmit} className="z-20">
                             <div className="-mx-2 md:items-center md:flex">
                                 <div className="flex-1 px-2">
-                                    <label className="block mb-2 text-sm text-gray-300">First Name</label>
+                                    <label className="block mb-2 text-sm text-[#c9d1d9]">First Name</label>
                                     <input
                                         type="text"
                                         placeholder="kolifla"
                                         name="user_firstname"
                                         required
-                                        className="block w-full px-5 py-2.5 mt-2 border rounded-lg placeholder-gray-400 bg-[#001100] text-white border-[#00AA44] focus:border-[#00FF66] focus:ring-[#00FF66] focus:outline-none focus:ring focus:ring-opacity-40"
+                                        className="block w-full px-5 py-2.5 mt-2 border rounded-lg placeholder-[#484f58] bg-[#0d1117] text-[#c9d1d9] border-[#30363d] focus:border-[#58a6ff] focus:ring-[#58a6ff] focus:outline-none focus:ring focus:ring-opacity-40"
                                     />
                                 </div>
 
                                 <div className="flex-1 px-2 mt-4 md:mt-0">
-                                    <label className="block mb-2 text-sm text-gray-300">Last Name</label>
+                                    <label className="block mb-2 text-sm text-[#c9d1d9]">Last Name</label>
                                     <input
                                         type="text"
                                         placeholder="Makva"
                                         name="user_lastname"
                                         required
-                                        className="block w-full px-5 py-2.5 mt-2 border rounded-lg placeholder-gray-400 bg-[#001100] text-white border-[#00AA44] focus:border-[#00FF66] focus:ring-[#00FF66] focus:outline-none focus:ring focus:ring-opacity-40"
+                                        className="block w-full px-5 py-2.5 mt-2 border rounded-lg placeholder-[#484f58] bg-[#0d1117] text-[#c9d1d9] border-[#30363d] focus:border-[#58a6ff] focus:ring-[#58a6ff] focus:outline-none focus:ring focus:ring-opacity-40"
                                     />
                                 </div>
                             </div>
                             <div className="mt-4">
-                                <label className="block mb-2 text-sm text-gray-300">Email address</label>
+                                <label className="block mb-2 text-sm text-[#c9d1d9]">Email address</label>
                                 <input
                                     type="email"
                                     placeholder="kolifla@example.com"
                                     name="user_email"
                                     required
-                                    className="block w-full px-5 py-2.5 mt-2 border rounded-lg placeholder-gray-400 bg-[#001100] text-white border-[#00AA44] focus:border-[#00FF66] focus:ring-[#00FF66] focus:outline-none focus:ring focus:ring-opacity-40"
+                                    className="block w-full px-5 py-2.5 mt-2 border rounded-lg placeholder-[#484f58] bg-[#0d1117] text-[#c9d1d9] border-[#30363d] focus:border-[#58a6ff] focus:ring-[#58a6ff] focus:outline-none focus:ring focus:ring-opacity-40"
                                 />
                             </div>
                             <div className="w-full mt-4">
-                                <label className="block mb-2 text-sm text-gray-300">Message</label>
+                                <label className="block mb-2 text-sm text-[#c9d1d9]">Message</label>
                                 <textarea
                                     name="message"
                                     required
-                                    className="block resize-none w-full h-32 px-5 py-2.5 mt-2 border rounded-lg md:h-56 placeholder-gray-400 bg-[#001100] text-white border-[#00AA44] focus:border-[#00FF66] focus:ring-[#00FF66] focus:outline-none focus:ring focus:ring-opacity-40"
+                                    className="block resize-none w-full h-32 px-5 py-2.5 mt-2 border rounded-lg md:h-56 placeholder-[#484f58] bg-[#0d1117] text-[#c9d1d9] border-[#30363d] focus:border-[#58a6ff] focus:ring-[#58a6ff] focus:outline-none focus:ring focus:ring-opacity-40"
                                     placeholder="Message"
                                 ></textarea>
                             </div>
-                            <button className="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-[#00FF66] rounded-lg hover:bg-[#00AA44] focus:outline-none focus:ring focus:ring-[#00FF66] focus:ring-opacity-50">
+                            <button className="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-[#238636] rounded-lg hover:bg-[#2ea043] focus:outline-none focus:ring focus:ring-[#3fb950] focus:ring-opacity-50">
                                 Send message
                             </button>
                         </form>
                     </div>
                 </div>
             </div>
-            <ToastContainer />
+            <ToastContainer 
+                position="top-right"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="dark"
+            />
         </section>
     );
 }
