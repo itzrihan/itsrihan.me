@@ -4,15 +4,26 @@
     {
       "src": "package.json",
       "use": "@vercel/static-build",
-      "config": { "distDir": "build" }
+      "config": {
+        "distDir": "build",
+        "installCommand": "npm install --legacy-peer-deps",
+        "outputDirectory": "build"
+      }
     }
   ],
   "routes": [
     {
+      "src": "/static/(.*)",
+      "dest": "/static/$1",
+      "headers": {
+        "Cache-Control": "public, max-age=31536000, immutable"
+      }
+    },
+    {
       "src": "/(.*)",
       "dest": "/index.html",
       "headers": {
-        "Cache-Control": "public, max-age=3600"
+        "Cache-Control": "public, max-age=0, must-revalidate"
       }
     }
   ]
