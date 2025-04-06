@@ -2,7 +2,7 @@ import AnimeApiLogo from "../assets/anime_api.webp";
 
 export const features = [
   {
-    link: "https://github.com/itzzzme/hi-api",
+    link: "https://github.com/itzrihan/hi-api",
     icon: AnimeApiLogo,
     title: "Anime API",
     desc: "This API serves as a centralized resource for detailed information on various anime titles, genres, release dates, ratings, and more. It offers seamless integration into applications and websites, providing robust functionality to enhance user experiences with anime-related content.",
