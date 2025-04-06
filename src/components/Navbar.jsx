@@ -53,7 +53,7 @@ const Navbar = () => {
   }, [currentSection]);
 
   return (
-    <nav className={`fixed w-full z-50 ${scrolled ? 'bg-opacity-80 backdrop-blur-lg' : 'bg-transparent'}`}>
+    <nav className={`fixed w-full z-50 ${scrolled ? 'bg-[#0d1117] bg-opacity-90 backdrop-blur-lg' : 'bg-transparent'}`}>
       <div className="items-center px-4 max-w-screen-xl mx-auto md:flex md:px-8">
         <div className="flex items-center justify-between pt-3 md:pt-5 md:block">
           <a href="#">
@@ -67,7 +67,7 @@ const Navbar = () => {
           </a>
           <div className="md:hidden">
             <button
-              className="text-gray-700 outline-none p-2 rounded-md focus:border-gray-400 focus:border transition-colors duration-300"
+              className="text-gray-300 outline-none p-2 rounded-md focus:border-gray-500 focus:border transition-colors duration-300"
               onClick={toggleMenu}
               aria-label="Toggle navigation menu"
             >
@@ -84,12 +84,12 @@ const Navbar = () => {
           </div>
         </div>
         <div className={`flex-1 justify-center items-center mt-8 md:flex md:justify-center md:mt-0 ${state ? 'block' : 'hidden'}`}>
-          <ul className={`flex flex-col items-center space-y-8 md:flex-row md:space-x-3 md:space-y-0 bg-[#00FF66] py-3 px-1 mr-14 rounded-3xl ${state ? 'w-full' : ''}`}>
+          <ul className={`flex flex-col items-center space-y-8 md:flex-row md:space-x-3 md:space-y-0 bg-[#161b22] py-3 px-1 mr-14 rounded-3xl ${state ? 'w-full' : ''}`}>
             {navigation.map((item, idx) => (
-              <li key={idx} className="text-gray-100 hover:text-[#00FF66]">
+              <li key={idx} className="text-gray-300 hover:text-white">
                 <a
                   href={item.path}
-                  className={`block py-2 px-4 transition-all duration-1000 ease-in-out ${currentSection === item.path ? 'bg-[#00AA44] rounded-xl' : ''}`}
+                  className={`block py-2 px-4 transition-all duration-300 ease-in-out ${currentSection === item.path ? 'bg-[#21262d] rounded-xl' : ''}`}
                 >
                   {item.title}
                 </a>
@@ -103,7 +103,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="hidden md:inline-block">
-          <a href={resumePDF} className="py-3 px-4 text-white bg-[#00FF66] hover:bg-[#00AA44] rounded-md shadow" download>
+          <a href={resumePDF} className="py-3 px-4 text-white bg-[#238636] hover:bg-[#2ea043] rounded-md shadow" download>
             Get my CV
           </a>
         </div>
