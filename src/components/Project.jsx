@@ -1,56 +1,88 @@
-import { features } from '../data/constant';
+import styled from "styled-components";
+import { skills } from "../data/constant.js";
+import { Tilt } from "react-tilt";
 
-const Project = () => {
+const SkillsContainer = styled.div`
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  @media (max-width:768px){   
+    grid-template-columns: repeat(1, 1fr);
+  }
+`;
+
+const Skill = styled.div`
+  width: 100%;
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  box-shadow: 0 4px 24px rgba(88, 166, 255, 0.15);
+  border-radius: 16px;
+  padding: 18px 36px;
+  @media (max-width: 768px) {
+    padding: 20px 36px;
+  }
+  @media (max-width: 500px) {
+    padding: 20px 20px;
+  }
+`;
+
+const SkillItem = styled.div`
+  font-size: 16px;
+  font-weight: 400;
+  color: #c9d1d9;  // Changed to GitHub light text color
+  border: 1px solid #30363d;
+  border-radius: 12px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #0d1117;
+  &:hover {
+    background-color: rgba(88, 166, 255, 0.1);
+    border-color: #58a6ff;
+    color: #58a6ff;  // Change to blue on hover
+  }
+`;
+
+const SkillImage = styled.img`
+  width: 24px;
+  height: 24px;
+`;
+
+const Skills = () => {
     return (
-        <section id="project" className="mt-[-1px] relative py-12 bg-[#0d1117]">
+        <section id="skills" className="mt-[-1px] relative py-5 bg-[#0d1117]">
             <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-t from-transparent to-[#0d1117]"></div>
+            <div className="absolute inset-0 max-w-md mx-auto h-72 blur-[118px]" style={{ background: "linear-gradient(152.92deg, rgba(88, 166, 255, 0.2) 4.54%, rgba(88, 166, 255, 0.26) 34.2%, rgba(88, 166, 255, 0.1) 77.55%)" }}></div>
             <div className="max-w-screen-xl mx-auto px-4 text-center text-[#8b949e] md:px-8">
                 <div className="max-w-3xl mx-auto relative">
-                    <h3 className="text-[#c9d1d9] text-5xl font-semibold max-sm:text-3xl relative z-20">
-                        Still Working <span className="text-[#58a6ff]">On projects</span>
+                    <h3 className="text-[#58a6ff] text-5xl font-bold max-sm:text-3xl">
+                        Skills I Have
                     </h3>
-                    <p className="mt-5 text-lg relative z-20">Soon It's Gonna Complete </p>
+                    <h1 className="mt-5 text-lg relative z-20 text-[#c9d1d9]">A glimpse into my expertise</h1>
                 </div>
-                <div className="mt-12">
-                    <ul className="grid gap-y-8 gap-x-12 sm:grid-cols-2 lg:grid-cols-3">
-                        {features.map((item, idx) => (
-                            <li
-                                key={idx}
-                                className="px-8 py-5 hover:scale-105 transition-transform duration-300"
-                                style={{
-                                    backgroundColor: "#161b22",
-                                    backdropFilter: "blur(16px) saturate(180%)",
-                                    WebkitBackdropFilter: "blur(16px) saturate(180%)",
-                                    border: "1px solid #30363d",
-                                    boxShadow: "0 4px 10px rgba(88, 166, 255, 0.15)",
-                                    borderRadius: "12px",
-                                }}
-                            >
-                                <a href={item.link} className="flex h-full w-full flex-col gap-y-2">
-                                    <div className="w-full h-[180px] mx-auto text-[#58a6ff] rounded-full flex items-center justify-center">
-                                        <img src={item.icon} alt="" className='w-full h-full object-cover'/>
-                                    </div>
-                                    <h4 className="text-lg text-[#c9d1d9] font-semibold">{item.title}</h4>
-                                    <p className="text-left text-[#8b949e]">{item.desc}</p>
-                                    <ul className="flex flex-wrap justify-start items-center gap-2 mt-4">
-                                        {item.techs.map((tech, index) => (
-                                            <li
-                                                key={index}
-                                                className="p-2 bg-[#238636] text-white rounded-lg hover:bg-[#2ea043] transition-colors"
-                                            >
-                                                {tech}
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </a>
-                            </li>
-                        ))}
-                    </ul>
-                </div>
+                <SkillsContainer className="mt-12 gap-10 max-lg:gap-5 max-sm:py-1">
+                    {skills.map((skill, index) => (
+                        <Tilt key={`skill-tilt-${index}`} className="flex">
+                            <Skill key={`skill-${index}`}>
+                                <h4 className="text-lg text-[#c9d1d9] font-semibold">{skill.title}</h4>
+                                <div className="grid grid-cols-3 gap-5 mt-5 max-lg:grid-cols-2 max-md:grid-cols-3 max-[580px]:grid-cols-2">
+                                    {skill.skills.map((item, index_x) => (
+                                        <SkillItem key={`skill-item-${index_x}`}>
+                                            <SkillImage src={item.image} alt={item.name} />
+                                            <span>{item.name}</span>  {/* Added span for text */}
+                                        </SkillItem>
+                                    ))}
+                                </div>
+                            </Skill>
+                        </Tilt>
+                    ))}
+                </SkillsContainer>
             </div>
-            <div className="absolute inset-0 max-w-md mx-auto h-72 blur-[118px]" style={{ background: "linear-gradient(152.92deg, rgba(88, 166, 255, 0.2) 4.54%, rgba(88, 166, 255, 0.26) 34.2%, rgba(88, 166, 255, 0.1) 77.55%)" }}></div>
         </section>
     );
 };
 
-export default Project;
+export default Skills;
