@@ -43,21 +43,7 @@ export const skills = [
         image:
           "https://d33wubrfki0l68.cloudfront.net/0834d0215db51e91525a25acf97433051f280f2f/c30f5/img/redux.svg",
       },
-      {
-        name: "Bootstrap",
-        image:
-          "https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png",
-      },
-      {
-        name: "TailwindCss",
-        image:
-          "https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg",
-      },
-      {
-        name: "Material UI",
-        image:
-          "https://raw.githubusercontent.com/devicons/devicon/master/icons/materialui/materialui-original.svg",
-      },
+      
     ],
   },
   {
@@ -109,16 +95,7 @@ export const skills = [
   {
     title: "Android",
     skills: [
-      {
-        name: "Java",
-        image:
-          "https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg",
-      },
-      {
-        name: "Jetpack Compose",
-        image:
-          "https://3.bp.blogspot.com/-VVp3WvJvl84/X0Vu6EjYqDI/AAAAAAAAPjU/ZOMKiUlgfg8ok8DY8Hc-ocOvGdB0z86AgCLcBGAsYHQ/s1600/jetpack%2Bcompose%2Bicon_RGB.png",
-      },
+      
       {
         name: "XML",
         image:
@@ -134,6 +111,12 @@ export const skills = [
   {
     title: "Others",
     skills: [
+
+      {
+        name: "Generative AI",
+        image:
+          "https://cdn-icons-png.flaticon.com/512/6134/6134346.png",
+      },
       {
         name: "Git",
         image:
