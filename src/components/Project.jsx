@@ -36,7 +36,7 @@ const Project = () => {
                                         {item.techs.map((tech, index) => (
                                             <li
                                                 key={index}
-                                                className="p-2 bg-[#21262d] text-[#c9d1d9] rounded-lg border border-[#30363d] hover:bg-[#30363d]"
+                                                className="p-2 bg-[#21262d] text-[#c9d1d9] rounded-lg border border-[#58a6ff] hover:bg-[#79c0ff]"
                                             >
                                                 {tech}
                                             </li>
