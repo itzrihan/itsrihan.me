@@ -39,37 +39,4 @@ Copyright (c) 2023 Your Name
 
 Permission is hereby granted... [Full license text as shown above]
 Contact Me 📩
-<div> <img src="https://img.shields.io/badge/Gmail-D14836?style=flat&logo=gmail&logoColor=white" alt="Email"> <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn"> <img src="https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white" alt="GitHub"> </div> ```
-How to use:
-
-    Copy the entire content above
-
-    Paste into your README.md file
-
-    Replace these placeholders:
-
-        yourusername in GitHub links
-
-        Your Name in copyright
-
-        Contact badge links (replace with your actual profiles)
-
-        Add your portfolio screenshot URL if available
-
-All elements are self-contained:
-
-    No external image files needed (uses GitHub's built-in markdown)
-
-    Badges use direct shield.io URLs
-
-    Clean formatting that renders perfectly on GitHub
-
-The design maintains:
-
-    Mobile-friendly layout
-
-    GitHub-flavored markdown compatibility
-
-    Visual hierarchy with emoji section headers
-
-    Professional appearance with badge icons
+<div> <img src="https://img.shields.io/badge/Gmail-D14836?style=flat&logo=gmail&logoColor=white" alt="Email"> <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn"> <img src="https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white" alt="GitHub"> </div>
