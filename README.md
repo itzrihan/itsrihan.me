@@ -8,7 +8,7 @@ A modern, responsive portfolio website built with React.js showcasing my skills,
 - **Project Showcase**: Detailed project sections
 - **Skills Visualization**: Interactive skills display
 - **Contact Form**: Functional email contact system
-- **Dark Mode**: GitHub-inspired theme
+
 
 ## Technologies Used 🛠️
 <div>
@@ -27,8 +27,7 @@ A modern, responsive portfolio website built with React.js showcasing my skills,
 
 Deployment 🚀
 
-Deployed using Vercel: <img src="https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white" alt="Vercel">
-
+<img src="https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white" alt="Vercel">
 
 Inspiration 🙏
 
@@ -37,8 +36,15 @@ License 📜
 
 MIT License
 
-Copyright (c) 2023 Your Name
+Copyright (c) 2025 Rihan
 
 Permission is hereby granted... [Full license text as shown above]
 Contact Me 📩
 <div> <img src="https://img.shields.io/badge/Gmail-D14836?style=flat&logo=gmail&logoColor=white" alt="Email"> <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white" alt="LinkedIn"> <img src="https://img.shields.io/badge/GitHub-100000?style=flat&logo=github&logoColor=white" alt="GitHub"> </div>
+
+## Installation 💻
+```bash
+git clone https://github.com/itzrihan/itsrihan.me.git
+cd itsrihan.me
+npm install
+npm run dev
