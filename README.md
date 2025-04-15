@@ -25,14 +25,6 @@ A modern, responsive portfolio website built with React.js showcasing my skills,
 - **Contact**: Working contact form
 - **Resume**: Downloadable CV
 
-## Installation 💻
-```bash
-git clone https://github.com/yourusername/portfolio.git
-cd portfolio
-npm install
-npm run dev
-
-
 Deployment 🚀
 
 Deployed using Vercel: <img src="https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white" alt="Vercel">
