@@ -28,6 +28,8 @@ A modern, responsive portfolio website built with React.js showcasing my skills,
 Deployment 🚀
 
 Deployed using Vercel: <img src="https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white" alt="Vercel">
+
+
 Inspiration 🙏
 
 This project was inspired by itzzzme's portfolio design.
