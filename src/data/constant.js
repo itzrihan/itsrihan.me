@@ -11,6 +11,45 @@ export const features = [
 ];
 
 export const skills = [
+
+  {
+    title: "Programming Languages",
+    skills: [
+      {
+        name: "Python",
+        image: "https://cdn-icons-png.flaticon.com/512/5968/5968350.png",
+      },
+      {
+        name: "C",
+        image:
+          "https://cdn-icons-png.flaticon.com/512/6132/6132222.png",
+      },
+      {
+        name: "C++",
+        image:
+          "https://cdn-icons-png.flaticon.com/512/6132/6132221.png",
+      },
+      {
+        name: "Typescript",
+        image:
+          "https://cdn-icons-png.flaticon.com/512/5968/5968381.png",
+      },
+      
+    ],
+  },
+
+  {
+    title: "CS Fundamentals",
+    skills: [
+      
+      {
+        name: "DSA",
+        image:
+          "https://cdn-icons-png.flaticon.com/512/2103/2103633.png",
+      },
+    ],
+  },
+  
   {
     title: "Frontend",
     skills: [
@@ -92,22 +131,7 @@ export const skills = [
       },
     ],
   },
-  {
-    title: "Android",
-    skills: [
-      
-      {
-        name: "XML",
-        image:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBMw6_RdwKQ9bDFfnKDX1iwMl4bVJEvd9PP53XuIw&s",
-      },
-      {
-        name: "Android Studio",
-        image:
-          "https://developer.android.com/static/studio/images/new-studio-logo-1_1920.png",
-      },
-    ],
-  },
+  
   {
     title: "Others",
     skills: [
