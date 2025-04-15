@@ -103,7 +103,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="hidden md:inline-block">
-          <a href={resumePDF} className="py-3 px-4 text-white bg-[#238636] hover:bg-[#2ea043] rounded-md shadow" download>
+          <a href={resumePDF} className="py-3 px-4 text-white bg-[#4598f7] hover:bg-[#79c0ff] rounded-md shadow" download>
             Get my CV
           </a>
         </div>
