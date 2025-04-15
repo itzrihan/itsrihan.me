@@ -135,8 +135,8 @@ function Contact() {
                                     placeholder="Message"
                                 ></textarea>
                             </div>
-                            <button className="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-[#238636] rounded-lg hover:bg-[#2ea043] focus:outline-none focus:ring focus:ring-[#3fb950] focus:ring-opacity-50">
-                                Send message
+                            <button className="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-[#58a6ff] rounded-lg hover:bg-[#79c0ff] focus:outline-none focus:ring focus:ring-[#58a6ff] focus:ring-opacity-50">
+                             Send message
                             </button>
                         </form>
                     </div>
