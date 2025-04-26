@@ -97,14 +97,14 @@ const Navbar = () => {
             ))}
             <li className="hidden max-md:inline-block">
               <a href={resumePDF} className="pb-6 px-4 text-white" download>
-                MY RESUME
+                my resume
               </a>
             </li>
           </ul>
         </div>
         <div className="hidden md:inline-block">
           <a href={resumePDF} className="py-3 px-4 text-white bg-[#4598f7] hover:bg-[#79c0ff] rounded-md shadow" download>
-            MY RESUME
+            my resume
           </a>
         </div>
       </div>
