@@ -1,7 +1,6 @@
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { IoLogoGithub } from "react-icons/io5";
-import { FaUpwork } from "react-icons/fa6";
 import { FaFiverr } from "react-icons/fa";
 import { MdOutlineMarkEmailRead } from "react-icons/md";
 import { CiLinkedin } from "react-icons/ci";
