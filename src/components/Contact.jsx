@@ -1,7 +1,7 @@
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { IoLogoGithub } from "react-icons/io5";
-import { FaUpwork } from "react-icons/fa6";
+import { FaFiverr } from "react-icons/fa6";
 import { MdOutlineMarkEmailRead } from "react-icons/md";
 import { CiLinkedin } from "react-icons/ci";
 import { useRef } from 'react';
@@ -42,7 +42,7 @@ function Contact() {
     link: 'https://www.linkedin.com/in/msrihan/',
   },
   {
-    icon: <FaUpwork className="text-2xl text-[#58a6ff]" />,
+    icon: <FaFiverr className="text-2xl text-[#58a6ff]" />,
     title: 'Fiverr',
     description: 'Check out my Fiverr gigs',
     contact: 'Visit Profile',
