@@ -20,41 +20,35 @@ function Contact() {
         );
     };
     const contactMethods = [
-        {
-            icon: (
-                <MdOutlineMarkEmailRead className='text-2xl text-[#58a6ff]'/>
-            ),
-            title: 'Email',
-            description: 'Connect with me through email',
-            contact: 'mononrihan7@gmail.com',
-            link: 'mailto:mononrihan7@gmail.com',
-        },
-        {
-            icon: (
-                <IoLogoGithub className="text-2xl text-[#58a6ff]" />
-            ),
-            title: 'GitHub',
-            description: 'Let\'s contribute',
-            contact: 'Contribute',
-            link: 'https://github.com/itzrihan',
-        },
-        {
-            icon: <CiLinkedin className="text-2xl text-[#58a6ff]" />,
-            title: 'LinkedIn',
-            description: 'Let me know if you need me',
-            contact: 'Let\'s connect',
-            link: 'https://www.linkedin.com/in/msrihan/',
-        },
-        {
-            icon: (
-                <FaFiverr className="text-2xl text-[#58a6ff]" />
-            ),
-            title: 'Fiverr',
-            description: 'Visit my Fiverr profile',
-            contact: 'Visit',
-            link: 'https://www.fiverr.com/rihan__'
-        },
-    ];
+  {
+    icon: <MdOutlineMarkEmailRead className='text-2xl text-[#58a6ff]'/>,
+    title: 'Email',
+    description: 'Connect with me through email',
+    contact: 'mononrihan7@gmail.com',
+    link: 'mailto:mononrihan7@gmail.com',
+  },
+  {
+    icon: <IoLogoGithub className="text-2xl text-[#58a6ff]" />,
+    title: 'GitHub',
+    description: 'Let\'s contribute',
+    contact: 'Contribute',
+    link: 'https://github.com/itzrihan',
+  },
+  {
+    icon: <CiLinkedin className="text-2xl text-[#58a6ff]" />,
+    title: 'LinkedIn',
+    description: 'Let me know if you need me',
+    contact: 'Let\'s connect',
+    link: 'https://www.linkedin.com/in/msrihan/',
+  },
+  {
+    icon: <FaFiverr className="text-2xl text-[#58a6ff]" />,
+    title: 'Fiverr',
+    description: 'Check out my Fiverr gigs',
+    contact: 'Visit Profile',
+    link: 'https://www.fiverr.com/rihan__' // Replace with your actual Fiverr link
+  }
+];
 
     return (
         <section id="contact" className="mt-[-5px] relative bg-[#0d1117] py-10">
