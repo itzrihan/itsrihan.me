@@ -97,7 +97,7 @@ const Navbar = () => {
             ))}
             <li className="hidden max-md:inline-block">
               <a href={resumePDF} className="pb-6 px-4 text-white" download>
-                Get my CV
+                MY RESUME
               </a>
             </li>
           </ul>
