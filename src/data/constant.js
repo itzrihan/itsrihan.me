@@ -160,7 +160,7 @@ export const skills = [
       {
         name: "Postman",
         image:
-          "https://static-00.iconduck.com/assets.00/postman-icon-497x512-beb7sy75.png",
+          "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg",
       },
       {
         name: "Vercel",
