@@ -136,11 +136,7 @@ export const skills = [
     title: "Others",
     skills: [
 
-      {
-        name: "Generative AI",
-        image:
-          "https://cdn-icons-png.flaticon.com/512/6134/6134346.png",
-      },
+     
       {
         name: "Git",
         image:
